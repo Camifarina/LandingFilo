@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="./js/index.js"></script>
+
+    <title>Filo.news - Landing</title>
+  </head>
+
+  <body>
+
+  <!-- HEADER -->
+  <div class="barra">
+    <img src="./assets/img/filoLogo2.png" alt="Logo de Filo.news" class="logo">
+  </div>
+
+  <!-- PORTADA -->
+  <div class="portada-conteiner">
+    <div class="portada-texto">
+        <h1 class="d1">Todo lo que no te podés perder. <br> Caja Negra en una sola playlist.</h1>
+        <h3 class="d2">Ahora tenés una playlist privada y personalizada con episodios exclusivos y recomendaciones. Queremos generar más contenido solo para vos.</h3>
+        <button class="boton1">Escuchar ahora</button>
+    </div>
+    <div class="portada-imagen">
+        <img src="./assets/img/foto2.jpg" alt="Foto de stock" class="imagen1">
+    </div>
+  </div>
+
+
+  <!-- SECCIÓN 1 -->
+  <div class="seccion1">
+    <p class="s1-textof">EL LUGAR<br>DONDE<br>TODO<br>QUED<br>A REGI<br>STRADO</p>
+    <div class="s1-cont">
+        <div class="s1-texto">
+        <h2>Disfrutá de lo que más te gusta</h2>
+        <h4>Junto a Spotify, no te pierdas todo lo nuevo de Caja Negra en donde sea y cuando sea. Por eso te creamos una playlist personalizada con entrevistas, recomendaciones según tus preferencias y, además, episodios exclusivos que no encontrarás en otro lugar.</h4>
+        <h4>Nosotros nos encargamos de que tu playlist se mantenga actualizada.</h4>
+        <h4>Conseguirla es muy fácil. Solo tenés que completar un formulario y te llegará un link de acceso a tu playlist por correo electrónico.</h4>
+        <button class="boton2">Empezar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN 2 -->
+  <div class="seccion2">
+        <h2 class="s2-texto">¿Por qué escuchar un podcast puede resultar productivo <br> para tu vida cotidiana?</h2>
+        <div class="s2-cont"></div>
+    <div class="grilla">
+        <div class="elemento1"><p>01</p></div>
+        <div class="elemento2"><p>02</p></div>
+        <div class="elemento3"><p>03</p></div>
+        <div class="elemento4"><p>04</p></div>
+        <div class="elemento5"><p>Te permite realizar varias actividades al mismo tiempo. Mientras lavas, haces ejercicio, comes, o cualquier actividad de tu rutina diaria puedes escuchar un podcast. Dejar que tu mente deambule un rato es una opción productiva.</p></div>
+        <div class="elemento6"><p>Te proporciona una mayor motivación. En el día a día hay tareas o actividades que no te gustan porque pueden ser aburridas. Pero, son necesarias, por lo que un programa de entretenimiento en forma de audio es una gran motivación.</p></div>
+        <div class="elemento7"><p>Te brinda información sobre cualquier tema. Aunque hay podcasts sobre relatos y novelas de ficción, la mayor parte de ellos son para compartir información sobre un tema que seguramente ya has querido escuchar.</p></div>
+        <div class="elemento8"><p>Es un formato flexible. A diferencia de un programa de radio, que tiene horario definido, puedes escuchar el podcast cuando quieras.</p></div>
+
+    </div>
+  </div>
+
+  <!-- SECCIÓN 3 -->
+  <div class="seccion3">
+    <div class="s3-texto">
+        <h3 class="s3-t">Obtener tu playlist personalizada es muy sencillo</h3>
+        <ul class="pasos">
+            <li class="paso1"><p>Hacer click en “empezar”;</p></li>
+            <li class="paso2"><p>Completar el formulario;</p></li>
+            <li class="paso3"><p>Abrir el email que te enviamos;</p></li>
+            <li class="paso4"><p>Hacer click en el botón o link de acceso, el cual te llevará a la playlist en Spotify;</p></li>
+            <li class="paso5"><p>Listo. Podes empezar a escuchar todo el contenido y/o guardar la playlist para escucharla cuando quieras.</p></li>
+        </ul>
+        <button class="boton3">Empezar</button>
+    </div>
+    <div class="s3-imagen">
+        <img src="./assets/img/foto1.jpg" alt="Foto de stock" class="imagen2">
+    </div>
+
+  </div>
+
+  <!-- FORMULARIO -->
+  <div class="form-cont">
+    <div class="wrapper">
+      <div class="separador"></div>
+      <div class="form">
+        <div id="form1">
+          <h2 class="form-tex">Seleccioná los temas que más te gustan</h2>
+          <div class="chips">
+            <div class="md-chips">
+              <input type="checkbox" onClick="toggle(this)" id="myCheckbox" />
+                <label for="myCheckbox" class="md-chip md-chip-clickable md-chip-hover"> Seleccionar todo</label>
+              <input type="checkbox" name="foo" value="bar2" id="1"> 
+                <label for="1" class="md-chip md-chip-clickable md-chip-hover">Género</label>
+              <input type="checkbox" name="foo" value="bar2" id="2"> 
+                <label for="2" class="md-chip md-chip-clickable md-chip-hover">Deporte</label>
+              <input type="checkbox" name="foo" value="bar2" id="3"> 
+                <label for="3" class="md-chip md-chip-clickable md-chip-hover">Viral</label>
+              <input type="checkbox" name="foo" value="bar2" id="4"> 
+                <label for="4" class="md-chip md-chip-clickable md-chip-hover">Espectáculo</label>
+              <input type="checkbox" name="foo" value="bar2" id="5"> 
+                <label for="5" class="md-chip md-chip-clickable md-chip-hover">Cine</label>
+              <input type="checkbox" name="foo" value="bar2" id="6"> 
+                <label for="6" class="md-chip md-chip-clickable md-chip-hover">Ciencia</label>
+              <input type="checkbox" name="foo" value="bar2" id="7"> 
+                <label for="7" class="md-chip md-chip-clickable md-chip-hover">Comida</label>
+              <input type="checkbox" name="foo" value="bar2" id="8"> 
+                <label for="8" class="md-chip md-chip-clickable md-chip-hover">Tecnología</label>
+              <input type="checkbox" name="foo" value="bar2" id="9"> 
+                <label for="9" class="md-chip md-chip-clickable md-chip-hover">Periodismo</label>
+              <input type="checkbox" name="foo" value="bar2" id="10"> 
+                <label for="10" class="md-chip md-chip-clickable md-chip-hover">Política</label>
+              <input type="checkbox" name="foo" value="bar2" id="11"> 
+                <label for="11" class="md-chip md-chip-clickable md-chip-hover">Filosofía</label>
+              <input type="checkbox" name="foo" value="bar2" id="12"> 
+                <label for="12" class="md-chip md-chip-clickable md-chip-hover">Influencers</label>
+              <input type="checkbox" name="foo" value="bar2" id="13"> 
+                <label for="13" class="md-chip md-chip-clickable md-chip-hover">Moda</label>
+              <input type="checkbox" name="foo" value="bar2" id="14"> 
+                <label for="14" class="md-chip md-chip-clickable md-chip-hover">Literatura</label>
+              <input type="checkbox" name="foo" value="bar2" id="15"> 
+                <label for="15" class="md-chip md-chip-clickable md-chip-hover">Salud</label>
+              <input type="checkbox" name="foo" value="bar2" id="16"> 
+                <label for="16" class="md-chip md-chip-clickable md-chip-hover">Autos</label>
+              <input type="checkbox" name="foo" value="bar2" id="17"> 
+                <label for="17" class="md-chip md-chip-clickable md-chip-hover">Teatro</label>
+              <input type="checkbox" name="foo" value="bar2" id="18"> 
+                <label for="18" class="md-chip md-chip-clickable md-chip-hover">Música</label>
+              <input type="checkbox" name="foo" value="bar2" id="19"> 
+                <label for="19" class="md-chip md-chip-clickable md-chip-hover">Sociedad</label>
+              <input type="checkbox" name="foo" value="bar2" id="20"> 
+                <label for="20" class="md-chip md-chip-clickable md-chip-hover">Televisión</label>
+              <input type="checkbox" name="foo" value="bar2" id="21"> 
+                <label for="21" class="md-chip md-chip-clickable md-chip-hover">Humor</label>
+              <input type="checkbox" name="foo" value="bar2" id="22"> 
+                <label for="22" class="md-chip md-chip-clickable md-chip-hover">Arte</label>
+              <input type="checkbox" name="foo" value="bar2" id="23"> 
+                <label for="23" class="md-chip md-chip-clickable md-chip-hover">Actualidad</label>
+              <input type="checkbox" name="foo" value="bar2" id="24"> 
+                <label for="24" class="md-chip md-chip-clickable md-chip-hover">Youtubers</label>
+              <input type="checkbox" name="foo" value="bar2" id="25"> 
+                <label for="25" class="md-chip md-chip-clickable md-chip-hover">Gaming</label>
+            </div>
+          </div>
+        </div>
+        <div class="form2 oculto">
+          <h2 class="form-tex">Completá con tus datos</h2>
+          <form>
+            <div class="form-conteiner">
+              <div class="input-wrap">
+                <p><input placeholder="Nombre" name="Nombre" type="text"></p>
+              </div>
+              <div class="input-wrap">
+                <p><input placeholder="Apellido" name="Apellido" type="text"></p>
+              </div>
+              <div class="input-wrap">
+                <p><input placeholder="Correo electrónico" name="Correo electrónico" type="text"></p>
+              </div>
+              <div class="input-wrap">
+                <p><input placeholder="Teléfono" name="Teléfono" type="text"></p>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+      <div class="botones">
+        <div class="common-botones form1-botones">
+          <button type="button" class="btn-sig">Siguiente</button>
+        </div>
+        <div class="common-botones form2-botones oculto" >
+          <button type="button" class="btn-vol">Volver</button>
+          <button type="button" class="btn-conf">Confirmar</button>
+        </div>
+      </div>
+      <div class="steps">
+        <ul>
+          <li class="active form1_progress">
+            <div class="step1"></div>
+          </li>
+          <li class="form2_progress">
+            <div class="step2"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="separador"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="f-texto">
+        <ul>
+            <li><a href="https://www.filo.news/newsletters" class="link1">Newsletter</a></li>
+            <li><a href="https://www.filo.news/staff" class="link2">Sobre Filo.news</a></li>
+            <li><a href="https://www.filo.news/terminos-y-condiciones" class="link3">Terminos y condiciones</a></li>
+            <li><a href="https://www.filo.news/politicas-de-privacidad" class="link4">Politicas de privacidad</a></li>
+            <li><a href="mailto:ayuda@filo.news?" class="link5">Contacto</a></li>
+        </ul>
+
+    </div>
+    <div class="f-redes">
+            <ul class="redes">
+                <li><a href="https://www.facebook.com/filonews"><img src="./assets/img/facebook.png" alt="" class="icono1"></a></li>
+                <li><a href="https://twitter.com/filonewsOK"><img src="./assets/img/twitter.png" alt="" class="icono2"></a></li>
+                <li><a href="https://www.instagram.com/filonewsok/"><img src="./assets/img/instagram.png" alt="" class="icono3"></a></li>
+                <li><a href="https://www.youtube.com/channel/UC9vs8KujZ2kJ2hbg01fNRVw/videos"><img src="./assets/img/youtube.png" alt="" class="icono4"></a></li>
+            </ul>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="./js/index.js"></script>
+
+  </body>
+  </html>
+  
