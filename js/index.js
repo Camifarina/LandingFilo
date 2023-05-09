@@ -80,3 +80,5 @@ $(document).ready(() => {
         spanNombre.html(nombre);
         spanEmail.html(email);
       }
+
+    
