@@ -24,7 +24,7 @@
     <div class="portada-texto">
         <h1 class="d1">Todo lo que no te podés perder. <br> Caja Negra en una sola playlist.</h1>
         <h3 class="d2">Ahora tenés una playlist privada y personalizada con episodios exclusivos y recomendaciones. Queremos generar más contenido solo para vos.</h3>
-        <button class="boton1">Escuchar ahora</button>
+        <button class="boton1"><a href="#f">Escuchar ahora</a></button>
     </div>
     <div class="portada-imagen">
         <img src="./assets/img/foto2.jpg" alt="Foto de stock" class="imagen1">
@@ -41,7 +41,7 @@
         <h4>Junto a Spotify, no te pierdas todo lo nuevo de Caja Negra en donde sea y cuando sea. Por eso te creamos una playlist personalizada con entrevistas, recomendaciones según tus preferencias y, además, episodios exclusivos que no encontrarás en otro lugar.</h4>
         <h4>Nosotros nos encargamos de que tu playlist se mantenga actualizada.</h4>
         <h4>Conseguirla es muy fácil. Solo tenés que completar un formulario y te llegará un link de acceso a tu playlist por correo electrónico.</h4>
-        <button class="boton2">Empezar</button>
+        <button class="boton2"><a href="#f">Empezar</a></button>
       </div>
     </div>
   </div>
@@ -74,7 +74,7 @@
             <li class="paso4"><p>Hacer click en el botón o link de acceso, el cual te llevará a la playlist en Spotify;</p></li>
             <li class="paso5"><p>Listo. Podes empezar a escuchar todo el contenido y/o guardar la playlist para escucharla cuando quieras.</p></li>
         </ul>
-        <button class="boton3">Empezar</button>
+        <button class="boton3"><a href="#f">Empezar</a></button>
     </div>
     <div class="s3-imagen">
         <img src="./assets/img/foto1.jpg" alt="Foto de stock" class="imagen2">
@@ -83,12 +83,12 @@
   </div>
 
   <!-- FORMULARIO -->
-  <div class="form-cont">
+  <div id="f" class="form-cont oculto">
     <div class="wrapper">
       <div class="separador"></div>
       <div class="form">
-        <div id="form1">
-          <h2 class="form-tex">Seleccioná los temas que más te gustan</h2>
+        <div calss="form1 oculto">
+          <h2 class="form-tex1">Seleccioná los temas que más te gustan</h2>
           <div class="chips">
             <div class="md-chips">
               <input type="checkbox" onClick="toggle(this)" id="myCheckbox" />
@@ -147,20 +147,20 @@
           </div>
         </div>
         <div class="form2 oculto">
-          <h2 class="form-tex">Completá con tus datos</h2>
-          <form>
+          <h2 class="form-tex2">Completá con tus datos</h2>
+          <form id="formulario-principal" action="#">
             <div class="form-conteiner">
               <div class="input-wrap">
-                <p><input placeholder="Nombre" name="Nombre" type="text"></p>
+                <p><input placeholder="Nombre" name="nombre" type="text" id="nombre"></p>
               </div>
               <div class="input-wrap">
-                <p><input placeholder="Apellido" name="Apellido" type="text"></p>
+                <p><input placeholder="Apellido" name="apellido" type="text" id="apellido"></p>
               </div>
               <div class="input-wrap">
-                <p><input placeholder="Correo electrónico" name="Correo electrónico" type="text"></p>
+                <p><input placeholder="Correo electrónico" name="correo electrónico" type="text" id="email"></p>
               </div>
               <div class="input-wrap">
-                <p><input placeholder="Teléfono" name="Teléfono" type="text"></p>
+                <p><input placeholder="Teléfono" name="teléfono" type="text" id="telefono"></p>
               </div>
             </div>
           </form>
@@ -169,12 +169,12 @@
 
       </div>
       <div class="botones">
-        <div class="common-botones form1-botones">
+        <div class="common-botones form1-botones oculto">
           <button type="button" class="btn-sig">Siguiente</button>
         </div>
         <div class="common-botones form2-botones oculto" >
           <button type="button" class="btn-vol">Volver</button>
-          <button type="button" class="btn-conf">Confirmar</button>
+          <button type="button" class="btn-conf" id="conf">Confirmar</button>
         </div>
       </div>
       <div class="steps">
@@ -189,6 +189,17 @@
       </div>
       <div class="separador"></div>
     </div>
+    
+  </div>
+  <div class="feedback-cont oculto">
+  <div class="feedback">
+    <h1>Gracias,<span id="dato-nombre">Nombre</span></h1>
+    <p>
+      En breve te llegará un mail a <span id="dato-email">nombreyapellido@mail.com.</span>
+      con el link de acceso.
+    </p>
+    <h3>Esparamos que disfrutes el contenido!</h3>
+  </div>
   </div>
 
   <!-- FOOTER -->

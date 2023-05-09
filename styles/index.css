@@ -101,6 +101,10 @@ h1 {
     font-weight: bold;
     border: none;
 }
+.boton1 a, .boton2 a, .boton3 a{
+  text-decoration: none;
+  color: white;
+}
 .boton1:hover, .boton2:hover, .boton3:hover, .boton-form1:hover{
   background-color: #EC2863;
 }
@@ -351,11 +355,13 @@ color: #FFFFFF;
 .oculto{
   display: none !important; 
 }
+
 .wrapper{
     background-color: #fff;
     height: 672px;
     text-align: center;
-    padding: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -364,7 +370,7 @@ color: #FFFFFF;
 
 }
 
-.form-tex{
+.form-tex1, .form-tex2{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
@@ -458,8 +464,6 @@ color: #FFFFFF;
 
 
 
-
-
 .md-chip {
   display: inline-block;
   background: #e0e0e0;
@@ -528,3 +532,15 @@ input[type="checkbox"]:checked + label {
 
 }
 
+
+
+.feedback-cont{
+  margin: 0px;
+  height: 672px;
+  width: auto;
+  background-color: #fff;
+}
+.feedback{
+  color: #000;
+  text-align: center;
+}
