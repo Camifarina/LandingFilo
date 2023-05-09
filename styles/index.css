@@ -302,10 +302,13 @@ color: #FFFFFF;
     color: #000000;
     line-height: 4rem;
     padding-right: 300px;
-    /* list-style-type: none; */
-    list-style-image: url(../assets/img/circulochico.png);
+    list-style-type: none; 
+    list-style-image: url(../assets/img/circulochico.png); 
+    
+    
     align-items: center;
 }
+
 
 .imagen2{
     width: 356px;
@@ -365,8 +368,9 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-between;
-    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    column-gap: 10px;
 
 }
 
@@ -378,12 +382,6 @@ color: #FFFFFF;
     line-height: 31px;
     color: #000000;
 }
-.separador{
-    height: 1px; 
-    width: 444px;
-    background-color: #ccc;
-    margin: 40px;
-}
 
 .wrapper .steps{
   display: flex;
@@ -393,6 +391,7 @@ color: #FFFFFF;
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  list-style-position: outside;
   height: 6px;
   width: 50px;
   margin: 2px;
@@ -543,4 +542,28 @@ input[type="checkbox"]:checked + label {
 .feedback{
   color: #000;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback h1{
+  font-size: 45px;
+}
+.feedback p{
+  font-size: 15px;
+}
+.feedback h3{
+  font-size: 15px;
+}
+.feedback img{
+  width: 220px;
+  height: 220px;
+}
+hr{
+  text-align: center;
+  width: 444px;
+  border-color: #e0e0e0;
 }

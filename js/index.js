@@ -18,9 +18,6 @@ $(document).ready(() => {
         abrirForm();
       });
 
-      $(".btn-vol").click(() => {
-        volverForm();
-      });
       $(".btn-conf").click(() => {
         abrirFeed();
         pasarDatosAFeedback();
@@ -51,15 +48,6 @@ $(document).ready(() => {
         $(".form1-botones").removeClass("oculto");
       }
 
-      function volverForm(){
-        console.log("form1");
-        $(".form2").addClass("oculto");
-        $(".form2-botones").addClass("oculto");
-        $(".form1").removeClass("oculto");
-        $(".form1-botones").removeClass("oculto");
-        $(".form-tex1").removeClass("oculto");
-        $(".md-chips").removeClass("oculto");
-      }
 
       function abrirFeed(){
         $(".form-cont").addClass("oculto");
@@ -77,8 +65,8 @@ $(document).ready(() => {
         const spanNombre = $("#dato-nombre");
         const spanEmail = $("#dato-email");
         
-        spanNombre.html(nombre);
-        spanEmail.html(email);
+        spanNombre.html(' ' + nombre);
+        spanEmail.html(' ' + email + ' ');
       }
 
     
