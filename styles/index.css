@@ -26,6 +26,9 @@
     font-weight: lighter;
     font-style: normal;
 }
+*{
+  box-sizing: border-box !important; /* Importante: esto hace que el tamaño de todas las cajas contemple el padding */
+}
 
 html,body {
   margin: 0%;
@@ -280,6 +283,7 @@ color: #FFFFFF;
     padding-right: 66px;
     padding-top: 90px;
     justify-content: space-between;
+   
 }
 .s3-t{
     font-family: 'Rubik';
@@ -598,4 +602,37 @@ hr{
 }
 .feedback .hr2{
   margin-top: 80px;
+}
+
+
+/* <!-- RESPONSIVE --> */
+
+@media screen and (min-width: 501px) {
+  .mobile-only {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .desktop-only {
+    display: none;
+  }
+  html {
+    font-size: 7.5px;
+    
+  }
+  
+  .portada-conteiner{
+    padding: 30px;
+    width: max-content;
+    height: 693px;
+    flex-wrap: wrap;
+  }
+  .portada-texto{
+    padding: 30px;
+  }
+  .d2{
+    padding-right: 500px;
+    display: flex;
+  }
+
 }
