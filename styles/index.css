@@ -620,6 +620,20 @@ hr{
     font-size: 7.5px;
     
   }
+
+  /* <!------- Header -------> */
+
+  .barra{
+    height: 47px;
+    justify-content:flex-start;
+    padding-left: 30px;
+  }
+  .logo{
+    width: 78px; 
+    height: 20px;
+  }
+
+  /* <!------- Portada -------> */
   
   .portada-conteiner{
     padding: 30px;
@@ -628,11 +642,27 @@ hr{
     flex-wrap: wrap;
   }
   .portada-texto{
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    flex-wrap: wrap;
   }
   .d2{
     padding-right: 500px;
     display: flex;
   }
+
+  /* <!------- Sección 1 -------> */
+
+  /* <!------- Sección 2 -------> */
+
+  /* <!------- Sección 3 -------> */
+
+  /* <!------- Footer -------> */
+
+  /* <!------- Formulario -------> */
+
+  /* <!------- Feedback -------> */
+  
 
 }
