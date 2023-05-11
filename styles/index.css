@@ -677,6 +677,14 @@ hr{
   }
 
   /* <!------- Footer -------> */
+  .f-texto{
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  ul{
+    padding-inline-start: 0px;
+  }
 
   /* <!------- Formulario -------> */
 
