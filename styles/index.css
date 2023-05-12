@@ -30,6 +30,9 @@
   box-sizing: border-box !important; /* Importante: esto hace que el tamaño de todas las cajas contemple el padding */
 }
 
+
+
+
 html,body {
   margin: 0%;
   border: 0%;
