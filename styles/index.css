@@ -47,12 +47,14 @@ html,body {
     font-size: 4.5rem;
     font-weight: bold;
     font-style: normal;
+    margin: 0%;
   }
   h2 {
     font-family: "Rubik";
     font-size: 3.6rem;
     font-weight: bold;
     font-style: normal;
+    margin: 0%;
   }
   
   h3 {
@@ -60,6 +62,7 @@ html,body {
     font-size: 2.6rem;
     font-weight: bold;
     font-style: normal;
+    margin: 0%;
   }
 
   h4 {
@@ -67,6 +70,7 @@ html,body {
     font-style: normal;
     font-weight: bold;
     font-size: 15rem;
+    margin: 0%;
   }
 
   p{
@@ -74,6 +78,7 @@ html,body {
     font-size: 2rem;
     font-weight: normal;
     font-style: normal;
+   
   }
   
   a{
@@ -187,86 +192,109 @@ html,body {
 
 /* <!-- SECCIÓN 2 --> */
 
-.seccion2{
+.seccion2 {
   background-color: black;
   width: 100%;
   display: flex;
-}
-
-.s2-texto{
-display: flex;
-align-items: center;
-text-align: center;
-color: white;
-margin: 0%;
-justify-content: flex-end;
-align-content: center;
-
-}
-.s2-cont{
-    width: 100%;
-    margin-left: 30%;
-    height: 9.7rem;
-    border: 2px solid white;
-    border-radius: 80px 0px 0px 80px;
-    background: transparent;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.cont-grilla{
-  padding-left: 5rem;
-  padding-top: 5rem;
+  flex-direction: column;
+  border: none;
+  
+ }
+ 
+ .texto{
+   width: 100%;
+   background-color: black;
+   color: white;
+ 
+ }
+ 
+ .cont-grilla{
+   padding-left: 5rem;
+   padding-top: 18rem;
+   padding-right: 5rem;
+ }
+ 
+ .grilla{
+   background-color: black;
+   color: white;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 2fr;
+   grid-template-areas:
+     "main second third fourth"
+     "fifth sixth seventh eighth";
+   column-gap: 4rem;
+   row-gap: 1rem;
+   justify-items: stretch;
+   align-items: stretch;
+ }
+ .grilla p{
+   font-weight: lighter;
+   font-size: 1.8rem;
+   margin: 0%;
+ }
+ .grilla h4{
+   color: var(--rosa);
+ }
+ .grilla .elem1{
+   grid-area: main;  
+ }
+ .grilla .elem2 {
+   grid-area: second;  
+ }
+ .grilla .elem3 {
+   grid-area: third;  
+ }
+ .grilla .elem4 {
+   grid-area: fourth;   
+ }
+ .grilla .elem5{
+   grid-area: fifth;
+ }
+ .grilla .elem6 {
+   grid-area: sixth;
+ }
+ .grilla .elem7 {
+   grid-area: seventh;
+ }
+ .grilla .elem8 {
+   grid-area: eighth;
+ }
+ .elem5, .elem6, .elem7, .elem8{
   padding-right: 5rem;
-}
+ }
 
-.grilla{
-  background-color: black;
+ .s2-texto{
+  display: flex;
+  width: 100%;
   color: white;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
-  grid-template-areas:
-    "main second third fourth"
-    "fifth sixth seventh eighth";
-  column-gap: 4rem;
-  row-gap: 1rem;
-  justify-items: stretch;
-  align-items: stretch;
-}
-.grilla p{
-  font-weight: lighter;
-  font-size: 1.8rem;
-  margin: 0%;
-}
-.grilla h4{
-  color: var(--rosa);
-}
-.grilla .elem1{
-  grid-area: main;  
-}
-.grilla .elem2 {
-  grid-area: second;  
-}
-.grilla .elem3 {
-  grid-area: third;  
-}
-.grilla .elem4 {
-  grid-area: fourth;   
-}
-.grilla .elem5{
-  grid-area: fifth;
-}
-.grilla .elem6 {
-  grid-area: sixth;
-}
-.grilla .elem7 {
-  grid-area: seventh;
-}
-.grilla .elem8 {
-  grid-area: eighth;
-}
+  background: transparent;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-right: 10%;
+  position: absolute;
+  z-index: 1;
+  padding-top: 7rem;
+  }
+
+  .cont-img{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 5rem;
+
+  }
+  .s2-imagen{
+    width: 75%;
+    height: 9.7rem;
+
+  }
+
+
 
 /* <!-- SECCIÓN 3 --> */
 .seccion3{
