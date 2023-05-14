@@ -180,7 +180,7 @@ html,body {
     padding-right: 30rem; 
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
     align-items: stretch;
 
 }
@@ -200,6 +200,18 @@ html,body {
 }
 .cRosa{
   width: 6%;
+}
+.b, .deco{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.flecha1{
+  width: 10%;
+}
+.flecha2{
+  width: 12%;
 }
 
 /* <!-- SECCIÓN 2 --> */
@@ -224,6 +236,7 @@ html,body {
    padding-left: 5rem;
    padding-top: 18rem;
    padding-right: 5rem;
+   
  }
  
  .grilla{
@@ -303,7 +316,16 @@ html,body {
   .s2-imagen{
     width: 75%;
     height: 9.7rem;
+  }
+  .s2-f{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
 
+  }
+  .flecha3{
+    width: 6%;
   }
 
   /* ------------------- CARDS ------------------------- */
@@ -716,9 +738,7 @@ hr{
 }
 
   /* <!------- Sección 2 -------> */
-  .seccion2 {
-    padding-bottom: 15rem
-  }
+  
   .s2-texto{
     padding-left: 20%;
     padding-top: 13%;
@@ -729,6 +749,12 @@ hr{
   }
   .cont-img{
     padding-top: 4rem;
+  }
+  .flecha3{
+    width: 15%;
+  }
+  .s2-f{
+    padding-top: 6rem;
   }
 
 
