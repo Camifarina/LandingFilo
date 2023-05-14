@@ -144,6 +144,8 @@ html,body {
 .boton1 a, .boton2 a, .boton3 a{
   text-decoration: none;
   color: white;
+  font-weight: bold;
+  font-size: 1.8rem;
 }
 .boton1:hover, .boton2:hover, .boton3:hover, .boton-form1:hover{
   background-color: var(--rosaHover);
@@ -176,7 +178,14 @@ html,body {
     color: black;
     padding: 9rem;
     padding-right: 30rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: stretch;
 
+}
+.s1-texto .t p{
+  font-size: 1.8rem;
 }
 .s1-textof{
     font-family: 'Rubik';
@@ -188,6 +197,9 @@ html,body {
     align-items:center;
     text-align: right; 
     color: var(--grisOscuro);
+}
+.cRosa{
+  width: 6%;
 }
 
 /* <!-- SECCIÓN 2 --> */
@@ -299,8 +311,8 @@ html,body {
   .seccion2 .cards-cont{
     background-color: black;
     width: 100%;
-    padding-top: 15rem;
-    padding-bottom: 4rem;
+    padding-top: 23rem;
+    padding-bottom: 6rem;
   }
   
   .cards-info .card-wrapper .card{
@@ -314,7 +326,7 @@ html,body {
     margin: 0 60px;
   }
   .card .num{
-    color: #E90248;
+    color: var(--rosa);
     padding-bottom: 0%;
   }
   .card .tex{
@@ -328,6 +340,10 @@ html,body {
     align-items: center;
     padding: 3.5rem;
     text-align: center;
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    padding-top: 10rem;
   }
 
 
@@ -634,6 +650,12 @@ hr{
   .mobile-only {
     display: none;
   }
+  .cards-cont .swiper-button-next, .cards-cont .swiper-button-prev, .cards-cont .swiper-pagination{
+    display: none;
+  }
+  div.cards-cont {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   .desktop-only {
@@ -644,7 +666,10 @@ hr{
     width: 100%;
   }
   h3{
-    font-size: 2.3rem;
+    font-size: 2.2rem;
+  }
+  h4{
+    font-size: 17rem;
   }
 
   /* <!------- Header -------> */
@@ -691,8 +716,19 @@ hr{
 }
 
   /* <!------- Sección 2 -------> */
+  .seccion2 {
+    padding-bottom: 15rem
+  }
   .s2-texto{
     padding-left: 20%;
+    padding-top: 13%;
+  }
+  .s2-imagen{
+    height: 105px;
+    width: 85%;
+  }
+  .cont-img{
+    padding-top: 4rem;
   }
 
 
