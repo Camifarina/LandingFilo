@@ -99,8 +99,7 @@ html,body {
 }
 
 .logo{
-    width: 218px; 
-    height: 57px;
+    width: 15%;
 }
 
 /* <!-- PORTADA --> */
@@ -704,17 +703,21 @@ hr{
 
   .barra{
     justify-content:flex-start;
+    padding: 1rem;
     padding-left: 4rem;
+
   }
   .logo{
-    width: 78px; 
-    height: 20px;
+    width: 30%;
   }
 
   /* <!------- Portada -------> */
   
   .portada-conteiner{
-    padding: 4rem;
+    padding-left: 4rem;
+    padding-top: 10rem;
+    padding-right: 0%;
+    padding-bottom: 0%;
     width: 100%;
     flex-wrap: wrap;
   }
@@ -722,6 +725,10 @@ hr{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-right: 4rem;
+  }
+  .d1, .d2{
+    padding-right: 0%;
   }
   .boton1, .boton-form1{
     width: 150px;
@@ -731,12 +738,35 @@ hr{
     width: 133px;
     height: 40px;
   }
+  .portada-imagen{
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0%;
+  
+  }
+  .p-img{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+  }
+  .imagen6{
+    width: 75%;
+    padding: 0%;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+
+
+  }
 
   /* <!------- Sección 1 -------> */
+
   .s1-cont{
     background-color: white;
     border-radius: 0px;
     width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
 
 }
 .s1-texto{
