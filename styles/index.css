@@ -368,7 +368,13 @@ html,body {
     padding-top: 10rem;
   }
 
+.circulo1{
+  width: 15%;
+  position: absolute;
+  z-index: 3;
+  padding-top: 68rem;
 
+}
 
 /* <!-- SECCIÓN 3 --> */
 .seccion3{
@@ -377,7 +383,7 @@ html,body {
     display: flex;
     padding-left: 9rem;
     padding-right: 9rem;
-    padding-top: 6rem;
+    padding-top: 17rem;
     padding-bottom: 6rem;
     justify-content: space-between;
    
@@ -731,14 +737,36 @@ hr{
     background-color: white;
     border-radius: 0px;
     width: 100%;
+
 }
 .s1-texto{
   padding: 4rem;
+  padding-bottom: 0%;
+}
+.s1-c{
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
 
+}
+.circulo3{
+  width: 20%;
+  padding-right: 2rem;
+}
+.circulo4{
+  padding-top: 2rem;
+  width: 16%;
+  position: absolute;
+  z-index: 3;
+  padding-right: 0%;
 }
 
   /* <!------- Sección 2 -------> */
   
+  .seccion2{
+    padding-top: 5rem;
+  }
   .s2-texto{
     padding-left: 20%;
     padding-top: 13%;
@@ -756,6 +784,10 @@ hr{
   .s2-f{
     padding-top: 6rem;
   }
+  .circulo1{
+    width: 25%;
+    padding-top: 88rem;
+  }
 
 
   /* <!------- Sección 3 -------> */
@@ -763,6 +795,7 @@ hr{
     flex-direction: column;
     padding: 4rem;
     justify-content: space-evenly;
+    padding-top: 13rem;
   }
   .pasos{
     padding-right: 4rem;
@@ -776,6 +809,9 @@ hr{
   }
   .s3-texto{
     width: 100%;
+  }
+  .s3-t{
+    font-size: 2.8rem;
   }
 
   /* <!------- Footer -------> */
