@@ -722,6 +722,7 @@ input[type="checkbox"]:checked + label {
   padding: 4rem;
   padding-bottom: 0%;
 }
+
 .s1-c{
   background-color: white;
   display: flex;
