@@ -836,6 +836,10 @@ input[type="checkbox"]:checked + label {
     padding-top: 4rem;
   }
 
+  .btn-conf, .btn-sig{
+    width: 100%;
+  }
+
   /* <!------- Feedback -------> */
   .feedback{
     padding: 0%;
