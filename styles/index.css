@@ -711,8 +711,8 @@ input[type="checkbox"]:checked + label {
     background-color: white;
     border-radius: 0px;
     width: 100%;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 
 }
 .s1-texto .t p{
