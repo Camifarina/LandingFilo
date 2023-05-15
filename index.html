@@ -136,125 +136,160 @@
 
   </div>
 
-  <!-- FORMULARIO -->
-  <div id="f" class="form-cont oculto">
-    <div class="wrapper">
-      <hr>
-      <div class="form">
-        <div calss="form1 oculto">
-          <h3 class="form-tex1">Seleccioná los temas que más te gustan</h3>
-          <div class="chips">
-            <div class="md-chips">
-              <input type="checkbox" onClick="toggle(this)" id="myCheckbox" />
-                <label for="myCheckbox" class="md-chip md-chip-clickable md-chip-hover"> Seleccionar todo</label>
-              <input type="checkbox" name="foo" value="bar2" id="1"> 
-                <label for="1" class="md-chip md-chip-clickable md-chip-hover">Género</label>
-              <input type="checkbox" name="foo" value="bar2" id="2"> 
-                <label for="2" class="md-chip md-chip-clickable md-chip-hover">Deporte</label>
-              <input type="checkbox" name="foo" value="bar2" id="3"> 
-                <label for="3" class="md-chip md-chip-clickable md-chip-hover">Viral</label>
-              <input type="checkbox" name="foo" value="bar2" id="4"> 
-                <label for="4" class="md-chip md-chip-clickable md-chip-hover">Espectáculo</label>
-              <input type="checkbox" name="foo" value="bar2" id="5"> 
-                <label for="5" class="md-chip md-chip-clickable md-chip-hover">Cine</label>
-              <input type="checkbox" name="foo" value="bar2" id="6"> 
-                <label for="6" class="md-chip md-chip-clickable md-chip-hover">Ciencia</label>
-              <input type="checkbox" name="foo" value="bar2" id="7"> 
-                <label for="7" class="md-chip md-chip-clickable md-chip-hover">Comida</label>
-              <input type="checkbox" name="foo" value="bar2" id="8"> 
-                <label for="8" class="md-chip md-chip-clickable md-chip-hover">Tecnología</label>
-              <input type="checkbox" name="foo" value="bar2" id="9"> 
-                <label for="9" class="md-chip md-chip-clickable md-chip-hover">Periodismo</label>
-              <input type="checkbox" name="foo" value="bar2" id="10"> 
-                <label for="10" class="md-chip md-chip-clickable md-chip-hover">Política</label>
-              <input type="checkbox" name="foo" value="bar2" id="11"> 
-                <label for="11" class="md-chip md-chip-clickable md-chip-hover">Filosofía</label>
-              <input type="checkbox" name="foo" value="bar2" id="12"> 
-                <label for="12" class="md-chip md-chip-clickable md-chip-hover">Influencers</label>
-              <input type="checkbox" name="foo" value="bar2" id="13"> 
-                <label for="13" class="md-chip md-chip-clickable md-chip-hover">Moda</label>
-              <input type="checkbox" name="foo" value="bar2" id="14"> 
-                <label for="14" class="md-chip md-chip-clickable md-chip-hover">Literatura</label>
-              <input type="checkbox" name="foo" value="bar2" id="15"> 
-                <label for="15" class="md-chip md-chip-clickable md-chip-hover">Salud</label>
-              <input type="checkbox" name="foo" value="bar2" id="16"> 
-                <label for="16" class="md-chip md-chip-clickable md-chip-hover">Autos</label>
-              <input type="checkbox" name="foo" value="bar2" id="17"> 
-                <label for="17" class="md-chip md-chip-clickable md-chip-hover">Teatro</label>
-              <input type="checkbox" name="foo" value="bar2" id="18"> 
-                <label for="18" class="md-chip md-chip-clickable md-chip-hover">Música</label>
-              <input type="checkbox" name="foo" value="bar2" id="19"> 
-                <label for="19" class="md-chip md-chip-clickable md-chip-hover">Sociedad</label>
-              <input type="checkbox" name="foo" value="bar2" id="20"> 
-                <label for="20" class="md-chip md-chip-clickable md-chip-hover">Televisión</label>
-              <input type="checkbox" name="foo" value="bar2" id="21"> 
-                <label for="21" class="md-chip md-chip-clickable md-chip-hover">Humor</label>
-              <input type="checkbox" name="foo" value="bar2" id="22"> 
-                <label for="22" class="md-chip md-chip-clickable md-chip-hover">Arte</label>
-              <input type="checkbox" name="foo" value="bar2" id="23"> 
-                <label for="23" class="md-chip md-chip-clickable md-chip-hover">Actualidad</label>
-              <input type="checkbox" name="foo" value="bar2" id="24"> 
-                <label for="24" class="md-chip md-chip-clickable md-chip-hover">Youtubers</label>
-              <input type="checkbox" name="foo" value="bar2" id="25"> 
-                <label for="25" class="md-chip md-chip-clickable md-chip-hover">Gaming</label>
-            </div>
-          </div>
-        </div>
-        <div class="form2 oculto">
-          <h3 class="form-tex2">Completá con tus datos</h3>
-          <form id="formulario-principal" action="#">
-            <div class="form-conteiner">
-              <div class="input-wrap">
-                <p><input placeholder="Nombre" type="text" id="nombre" required></p>
-              </div>
-              <div class="input-wrap">
-                <p><input placeholder="Apellido" type="text" id="apellido" required></p>
-              </div>
-              <div class="input-wrap">
-                <p><input placeholder="Correo electrónico" type="text" id="email" required></p>
-              </div>
-            </div>
-          </form>
+  <!-- FORMULARIO 1 -->
 
-        </div>
-
-      </div>
-      <div class="botones">
-        <div class="common-botones form1-botones oculto">
-          <button type="button" class="btn-sig">Siguiente</button>
-        </div>
-        <div class="common-botones form2-botones oculto" >
-          <button type="button" class="btn-conf" id="conf">Confirmar</button>
-        </div>
-      </div>
-      <div class="steps">
-        <ul>
-          <li class="active form1_progress">
-            <div class="step1"></div>
-          </li>
-          <li class="form2_progress">
-            <div class="step2"></div>
-          </li>
-        </ul>
-      </div>
+  <div id="f" class="form-cont1 oculto">
+    <div class="f1-1">
       <hr>
     </div>
-  </div>
+    <div class="f1-2">
+      <h3 class="form-tex1">Seleccioná los temas que más te gustan</h3>
+    </div>
+    <div class="f1-2-2">
+      <p class="form-tex2">(Podés seleccionar todos los que quieras)</p>
+    </div>
+    <div class="f1-3">
+      <div class="chips">
+        <div class="md-chips">
+          <input type="checkbox" onClick="toggle(this)" id="myCheckbox" />
+            <label for="myCheckbox" class="md-chip md-chip-clickable md-chip-hover chip1"> Seleccionar todo</label>
+          <input type="checkbox" name="foo" value="bar2" id="1"> 
+            <label for="1" class="md-chip md-chip-clickable md-chip-hover">Género</label>
+          <input type="checkbox" name="foo" value="bar2" id="2"> 
+            <label for="2" class="md-chip md-chip-clickable md-chip-hover">Deporte</label>
+          <input type="checkbox" name="foo" value="bar2" id="3"> 
+            <label for="3" class="md-chip md-chip-clickable md-chip-hover">Viral</label>
+          <input type="checkbox" name="foo" value="bar2" id="4"> 
+            <label for="4" class="md-chip md-chip-clickable md-chip-hover">Espectáculo</label>
+          <input type="checkbox" name="foo" value="bar2" id="5"> 
+            <label for="5" class="md-chip md-chip-clickable md-chip-hover">Cine</label>
+          <input type="checkbox" name="foo" value="bar2" id="6"> 
+            <label for="6" class="md-chip md-chip-clickable md-chip-hover">Ciencia</label>
+          <input type="checkbox" name="foo" value="bar2" id="7"> 
+            <label for="7" class="md-chip md-chip-clickable md-chip-hover">Comida</label>
+          <input type="checkbox" name="foo" value="bar2" id="8"> 
+            <label for="8" class="md-chip md-chip-clickable md-chip-hover">Tecnología</label>
+          <input type="checkbox" name="foo" value="bar2" id="9"> 
+            <label for="9" class="md-chip md-chip-clickable md-chip-hover">Periodismo</label>
+          <input type="checkbox" name="foo" value="bar2" id="10"> 
+            <label for="10" class="md-chip md-chip-clickable md-chip-hover">Política</label>
+          <input type="checkbox" name="foo" value="bar2" id="11"> 
+            <label for="11" class="md-chip md-chip-clickable md-chip-hover">Filosofía</label>
+          <input type="checkbox" name="foo" value="bar2" id="12"> 
+            <label for="12" class="md-chip md-chip-clickable md-chip-hover">Influencers</label>
+          <input type="checkbox" name="foo" value="bar2" id="13"> 
+            <label for="13" class="md-chip md-chip-clickable md-chip-hover">Moda</label>
+          <input type="checkbox" name="foo" value="bar2" id="14"> 
+            <label for="14" class="md-chip md-chip-clickable md-chip-hover">Literatura</label>
+          <input type="checkbox" name="foo" value="bar2" id="15"> 
+            <label for="15" class="md-chip md-chip-clickable md-chip-hover">Salud</label>
+          <input type="checkbox" name="foo" value="bar2" id="16"> 
+            <label for="16" class="md-chip md-chip-clickable md-chip-hover">Autos</label>
+          <input type="checkbox" name="foo" value="bar2" id="17"> 
+            <label for="17" class="md-chip md-chip-clickable md-chip-hover">Teatro</label>
+          <input type="checkbox" name="foo" value="bar2" id="18"> 
+            <label for="18" class="md-chip md-chip-clickable md-chip-hover">Música</label>
+          <input type="checkbox" name="foo" value="bar2" id="19"> 
+            <label for="19" class="md-chip md-chip-clickable md-chip-hover">Sociedad</label>
+          <input type="checkbox" name="foo" value="bar2" id="20"> 
+            <label for="20" class="md-chip md-chip-clickable md-chip-hover">Televisión</label>
+          <input type="checkbox" name="foo" value="bar2" id="21"> 
+            <label for="21" class="md-chip md-chip-clickable md-chip-hover">Humor</label>
+          <input type="checkbox" name="foo" value="bar2" id="22"> 
+            <label for="22" class="md-chip md-chip-clickable md-chip-hover">Arte</label>
+          <input type="checkbox" name="foo" value="bar2" id="23"> 
+            <label for="23" class="md-chip md-chip-clickable md-chip-hover">Actualidad</label>
+          <input type="checkbox" name="foo" value="bar2" id="24"> 
+            <label for="24" class="md-chip md-chip-clickable md-chip-hover">Youtubers</label>
+          <input type="checkbox" name="foo" value="bar2" id="25"> 
+            <label for="25" class="md-chip md-chip-clickable md-chip-hover">Gaming</label>
+        </div>
+      </div>
+    </div>
+    <div class="f1-4">
+      <button type="button" class="btn-sig">Siguiente</button>
+    </div>
+    <div class="f1-5">
+      <div class="s1">
+        <hr class="step1 active">
+      </div>
+      <div class="s2">
+        <hr class="step2">
+      </div>
+    </div>
+    <div class="f1-6">
+      <hr>
+    </div>
+   </div>
 
-  <!-- FEEDBACK-->
-  <div class="feedback-cont oculto">
-  <div class="feedback">
-    <hr>
-    <img src="./assets/img/tilde.jpg" alt="check">
-    <h1>Gracias,<span id="dato-nombre">Nombre</span></h1>
-    <p>
-      En breve te llegará un mail a <span id="dato-email">nombreyapellido@mail.com</span>
-      con el link de acceso.
-    </p>
-    <p>Esparamos que disfrutes el contenido!</p>
-    <hr class="hr2">
-  </div>
-  </div>
+   <!-- FORMULARIO 2 -->
+
+   <div class="form-cont2 oculto">
+    <div class="f2-1">
+      <hr>
+    </div>
+    <div class="f2-2">
+      <h3 class="form2-tex">Completá con tus datos</h3>
+    </div>
+    <div class="f2-3">
+      <form id="formulario-principal" action="#">
+        <div class="form-conteiner">
+          <div class="input-wrap">
+            <p><input placeholder="Nombre" type="text" id="nombre" required></p>
+          </div>
+          <div class="input-wrap">
+            <p><input placeholder="Apellido" type="text" id="apellido" required></p>
+          </div>
+          <div class="input-wrap">
+            <p><input placeholder="Correo electrónico" type="text" id="email" required></p>
+          </div>
+          <div class="boton-conf">
+            <input type="submit" value="Confirmar" class="btn-conf">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="f2-5">
+      <div class="s1">
+        <hr class="step1">
+      </div>
+      <div class="s2">
+        <hr class="step2 active">
+      </div>
+    </div>
+    <div class="f2-6">
+      <hr>
+    </div>
+   </div>
+
+   <!-- FEEDBACK -->
+
+   <div class="feedback oculto">
+    <div class="f3-1">
+      <hr>
+    </div>
+    <div class="f3-2">
+      <img class="feed-img1" src="./assets/img/tilde.jpg" alt="check">
+    </div>
+    <div class="f3-3">
+      <h1>Gracias,<span id="dato-nombre">Nombre</span></h1>
+    </div>
+    <div class="f3-4">
+      <p>
+        En breve te llegará un mail a <span id="dato-email">nombreyapellido@mail.com</span>
+        con el link de acceso.
+      </p>
+    </div>
+    <div class="f3-5">
+      <p>Esparamos que disfrutes el contenido!</p>
+    </div>
+    <div class="f3-7 mobile-only">
+      <img class="feed-img2" src="./assets/img/tilde.jpg" alt="check">
+    </div>
+    <div class="f3-6">
+      <hr>
+    </div>
+   </div>
 
   <!-- FOOTER -->
   <div class="footer">
