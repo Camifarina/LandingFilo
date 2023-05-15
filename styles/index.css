@@ -473,6 +473,17 @@ html,body {
   text-align: center;
   gap: 2rem;
 }
+.form-cont1{
+  gap: 0%;
+}
+.form-cont1 .f1-4{
+  padding: 2rem;
+  padding-top: 4rem;
+}
+.form-cont1 .f1-6{
+  padding-top: 5rem;
+}
+
 .form-tex1, .form-tex2, .form2-tex, .f3-3 h1, .f3-4 p, .f3-5 p{
   color: black;
 }
@@ -594,11 +605,19 @@ input[type="checkbox"]:checked + label {
 }
 
 .feedback .f3-2 .feed-img1{
-  width: 30%;
+  width: 20%;
 }
-.feedback .f3-7 .feed-img2{
-  width: 30%;
+.feedback{
+  gap: 0%;
+  align-content: center;
 }
+.feedback .f3-1{
+  padding-bottom: 7rem;
+}
+.feedback .f3-6{
+  padding-top: 7rem;
+}
+
 
 
 /* <!-- RESPONSIVE --> */
@@ -647,7 +666,7 @@ input[type="checkbox"]:checked + label {
     padding-left: 4rem;
     padding-top: 10rem;
     padding-right: 0%;
-    padding-bottom: 0%;
+    padding-bottom: 5rem;
     width: 100%;
     flex-wrap: wrap;
   }
@@ -672,6 +691,7 @@ input[type="checkbox"]:checked + label {
     justify-content: flex-end;
     width: 100%;
     padding: 0%;
+    padding-top: 5rem;
   
   }
   .p-img{
@@ -785,9 +805,12 @@ input[type="checkbox"]:checked + label {
   }
 
   /* <!------- Formulario -------> */
-  .form-cont1, .form-cont2, .feedback{
+  .form-cont1, .form-cont2, .f3-1, .f3-2, .f3-4, .f3-5, .f3-6{
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+  .form-cont1, .form-cont2, .feedback{
+    height: 850px;
   }
 
   .md-chips{
@@ -799,8 +822,40 @@ input[type="checkbox"]:checked + label {
   .chip1{
     width: 100%;
   }
+  .boton-conf{
+    padding-top: 26rem;
+  }
+  .f2-2{
+    padding-top: 10rem;
+  }
+  .f2-1{
+    padding-bottom: 4rem;
+  }
+  .f2-6{
+    padding-top: 4rem;
+  }
 
   /* <!------- Feedback -------> */
-  
+  .feedback{
+    padding: 0%;
+  }
+  .f3-7{
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 0%;
+    padding-top: 4rem;
+  }
+  .feedback .f3-2 .feed-img1{
+    width: 40%;
+  }
+  .f3-7 .feed-img2{
+    width: 45%;
+  }
+  .f3-1{
+    padding-bottom: 6rem;
+  }
+  .f3-6{
+    padding-top: 6rem;
+  }
 
 }
