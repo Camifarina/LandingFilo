@@ -711,9 +711,12 @@ input[type="checkbox"]:checked + label {
     background-color: white;
     border-radius: 0px;
     width: 100%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 
+}
+.s1-texto .t p{
+  font-size: 2rem;
 }
 .s1-texto{
   padding: 4rem;
