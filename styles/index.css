@@ -670,7 +670,10 @@ input[type="checkbox"]:checked + label {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-right: 4rem;
+    padding-right: 5rem;
+  }
+  .portada-texto .d2 {
+    font-size: 2.1rem;
   }
   .d1, .d2{
     padding-right: 0%;
