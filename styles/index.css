@@ -35,6 +35,7 @@
   --rosaHover: #EC2863;
   --grisOscuro: #232323;
   --grisSeparador: #e0e0e0;
+  --grisClaro: #8F8F8F;
 }
 
 html,body {
@@ -125,7 +126,7 @@ html,body {
   padding-right: 15rem;
 }
 
-.boton1, .boton2, .boton3, .boton-form1{
+.boton1, .boton2, .boton3, .btn-conf, .btn-sig{
     width: 21.4rem;
     height: 5.3rem; 
     color: white;
@@ -146,7 +147,7 @@ html,body {
   font-weight: bold;
   font-size: 1.8rem;
 }
-.boton1:hover, .boton2:hover, .boton3:hover, .boton-form1:hover{
+.boton1:hover, .boton2:hover, .boton3:hover, .btn-conf:hover, .btn-sig:hover{
   background-color: var(--rosaHover);
 }
 .portada-imagen{
@@ -191,11 +192,17 @@ html,body {
     font-style: normal;
     font-weight: bold;
     font-size: 120px;
-    line-height: 130px;
+    line-height: 92%;
     display: flex;
+    justify-content: flex-end;
     align-items:center;
     text-align: right; 
     color: var(--grisOscuro);
+    margin: 0%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    padding-left: 50%;
 }
 .cRosa{
   width: 6%;
@@ -489,7 +496,7 @@ html,body {
 }
 .f1-1 hr, .f1-6 hr, .f2-1 hr, .f2-6 hr, .f3-1 hr, .f3-6 hr{
   width: 50%;
-  background-color: #e0e0e0;
+  background-color: var(--grisSeparador);
 }
 .f1-1, .f1-6, .f2-1, .f2-6, .f3-1, .f3-6{
   padding-top: 4rem;
@@ -497,7 +504,7 @@ html,body {
 }
 .form-tex2{
   font-size: 1.4rem;
-  color: gray;
+  color: var(--grisClaro);
 }
 
 .f1-5, .f2-5{
@@ -513,32 +520,17 @@ html,body {
 .step1, .step2{
   height: 6px;
   width: 5rem;
-  background-color: #A5A5A5;
+  background-color: var(--grisClaro);
   border: none;
   border-radius: 40px;
 }
 .active{
-  background-color: #E90248;
+  background-color: var(--rosa);
 }
 
-.btn-conf, .btn-sig{
-    width: 21.4rem;
-    height: 5.3rem; 
-    color: white;
-    background-color: #E90248;
-    text-decoration: none;
-    border-radius: 6rem;
-    text-align: center;
-    cursor: pointer;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    border: none;
-}
-
-.md-chip {
+ .md-chip {
   display: inline-block;
-  background: #e0e0e0;
+  background: var(--grisSeparador);
   height: 32px;
   line-height: 30px;
   padding: 2px 18px;
@@ -554,7 +546,7 @@ html,body {
 
 }
 .md-chip-hover:hover {
-    background: #ccc;
+    background: var(--grisSeparador);
   }
 .md-chip-clickable {
  cursor: pointer;
@@ -562,8 +554,8 @@ html,body {
 .md-chips {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 19%;
-  padding-right: 19%;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-top: 2rem;
   padding-bottom: 2rem;
   justify-content: space-between;
@@ -579,10 +571,14 @@ input[type="checkbox"] {
   display: none;
 }
 input[type="checkbox"]:checked + label {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
   background: rgba(233, 2, 72, 0.15);
   color: black;
-  border: 1px solid #E90248;
-}
+  border: 1px solid var(--rosa);
+} 
+
+
 
 .input-wrap{
   width: 500px;
@@ -590,7 +586,7 @@ input[type="checkbox"]:checked + label {
   margin:0 auto 30px;
 }
 .input-wrap input{
-  border: 1px solid #A5A5A5;
+  border: 1px solid var(--grisClaro);
   border-radius: 20px;
   padding: 10px;
   padding-left: 25px;
@@ -793,6 +789,8 @@ input[type="checkbox"]:checked + label {
   .s3-t{
     font-size: 2.8rem;
   }
+
+  
 
   /* <!------- Footer -------> */
   .f-texto{

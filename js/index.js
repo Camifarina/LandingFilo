@@ -1,13 +1,7 @@
 $(document).ready(() => {
     console.log("JQuery Cargado");
-
-    function toggle(source) {
-        checkboxes = document.getElementsByName('foo');
-        for(var i=0, n=checkboxes.length;i<n;i++) {
-          checkboxes[i].checked = source.checked;
-        }
-      }
-  
+    
+    
       $(".boton1, .boton2, .boton3").click(() => {
         abrirForm();
       });
@@ -63,7 +57,7 @@ $(document).ready(() => {
           prevEl: ".swiper-button-prev",
         },
       });
-
+   
 
 });
     
