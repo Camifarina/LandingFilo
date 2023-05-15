@@ -789,8 +789,11 @@ input[type="checkbox"]:checked + label {
   .s3-t{
     font-size: 2.8rem;
   }
-
-  
+  .img-lista{
+    width: 43px;
+    height: 424px;
+    padding-top: 2rem;
+  }
 
   /* <!------- Footer -------> */
   .f-texto{
